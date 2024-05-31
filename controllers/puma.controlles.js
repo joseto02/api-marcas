@@ -7,9 +7,7 @@ const getPuma = (req, res) => {
         statusCode: 200,
         puma
     });
-
 }
-
 module.exports = {
     getPuma
 }

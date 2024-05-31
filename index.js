@@ -5,15 +5,16 @@ const cors = require("cors");
 const puerto = 2006;
 
 
-const { getAdidas } = require("./controllers/adidas.controller")
-const { getNike } = require("./controllers/nike.controller")
-const { getPuma } = require("./controllers/puma.controlles")
+const { getAdidas } = require("./controllers/adidas.controller");
+const { getNike } = require("./controllers/nike.controller");
+const { getPuma } = require("./controllers/puma.controlles");
 
 app.use(cors());
 
-app.get("/", getAdidas)
-app.get("/", getNike)
-app.get("/", getPuma)
+app.get("/adidas", getAdidas);
+app.get("/nike", getNike);
+app.get("/puma", getPuma)
+
 
 
 app.listen(puerto, () => {
